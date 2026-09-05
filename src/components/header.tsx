@@ -18,9 +18,9 @@ const Header: React.FC = () => {
           {/* Logo */}
           <Link
             href="/homepage"
-            className="text-2xl text-foreground font-semibold tracking-tighter"
+            className="text-4xl text-foreground font-comfortaa tracking-widest"
           >
-            M O N E T
+            monet
           </Link>
 
           {/* Desktop Navigation */}
