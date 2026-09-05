@@ -19,7 +19,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
     <>
       <Link
         href={href}
-        className={`group relative block overflow-hidden rounded-xl ${className}`}
+        className={`group relative block overflow-hidden rounded-xs ${className}`}
       >
         {/* Image */}
         <Image

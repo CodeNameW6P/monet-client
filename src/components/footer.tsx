@@ -25,13 +25,13 @@ const accountLinks = [
 export function Footer() {
   return (
     <footer className="bg-foreground text-background">
-      <div className="mx-auto max-w-7xl px-4 py-14 md:px-6 md:py-20">
+      <div className="mx-auto max-w-7xl px-4 py-14 md:px-6">
         {/* Main footer */}
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-5">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="text-3xl font-bold tracking-tight">
-              VOLT
+            <Link href="/" className="text-3xl font-semibold tracking-tighter">
+              M O N E T
             </Link>
 
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-background/60">
@@ -48,7 +48,7 @@ export function Footer() {
 
               <div className="flex items-center gap-3">
                 <Mail className="size-4" />
-                <span>hello@volt.example</span>
+                <span>monet@example.com</span>
               </div>
 
               <div className="flex items-center gap-3">
@@ -60,7 +60,7 @@ export function Footer() {
 
           {/* Shop */}
           <div>
-            <h3 className="mb-5 text-xs font-bold uppercase tracking-[0.2em] text-background/50">
+            <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-background/50">
               Shop
             </h3>
 
@@ -80,7 +80,7 @@ export function Footer() {
 
           {/* Help */}
           <div>
-            <h3 className="mb-5 text-xs font-bold uppercase tracking-[0.2em] text-background/50">
+            <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-background/50">
               Help
             </h3>
 
@@ -100,7 +100,7 @@ export function Footer() {
 
           {/* Account */}
           <div>
-            <h3 className="mb-5 text-xs font-bold uppercase tracking-[0.2em] text-background/50">
+            <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-background/50">
               Account
             </h3>
 
@@ -156,7 +156,7 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="mt-14 flex flex-col gap-4 border-t border-background/10 pt-6 text-xs text-background/40 sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 VOLT. All rights reserved.</p>
+          <p>© 2026 MONET. All rights reserved.</p>
 
           <div className="flex gap-5">
             <Link

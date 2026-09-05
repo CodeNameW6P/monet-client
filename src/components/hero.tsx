@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
 
             <div className="relative z-10 flex h-full items-center justify-center">
               <Image
-                src="/images/hero-1.jpg"
+                src="/images/1-street-runner.avif"
                 alt="Featured sneaker"
                 width={800}
                 height={600}

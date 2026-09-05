@@ -13,14 +13,14 @@ const navigation = [
 const Header: React.FC = () => {
   return (
     <>
-      <header className="sticky top-0 z-50 shadow-md bg-background/90 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-6">
+      <header className="sticky top-0 z-50 shadow-md bg-background/80 backdrop-blur-md">
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
           {/* Logo */}
           <Link
             href="/homepage"
-            className="text-2xl font-semibold tracking-tight"
+            className="text-2xl text-foreground font-semibold tracking-tighter"
           >
-            MONET
+            M O N E T
           </Link>
 
           {/* Desktop Navigation */}
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
               <Link
                 key={item.label}
                 href={item.href}
-                className="text-sm font-medium text-foreground/75 transition-colors hover:text-foreground"
+                className="text-md font-semibold text-foreground underline-offset-4 hover:underline"
               >
                 {item.label}
               </Link>
@@ -38,11 +38,21 @@ const Header: React.FC = () => {
 
           {/* Desktop Actions */}
           <div className="hidden items-center gap-2 md:flex">
-            <Button variant={"ghost"} size={"icon"} aria-label="Search">
+            <Button
+              className={"rounded-xs hover:bg-foreground/10"}
+              variant={"ghost"}
+              size={"icon"}
+              aria-label="Search"
+            >
               <Search />
             </Button>
             <div className="relative">
-              <Button variant={"ghost"} size={"icon"} aria-label="Wishlist">
+              <Button
+                className={"rounded-xs hover:bg-foreground/10"}
+                variant={"ghost"}
+                size={"icon"}
+                aria-label="Wishlist"
+              >
                 <Heart />
               </Button>
               <span className="absolute -top-1 -right-1 flex px-0.5 items-center justify-center rounded-xs bg-purple-500 text-xs font-semibold text-white">
@@ -50,25 +60,47 @@ const Header: React.FC = () => {
               </span>
             </div>
             <div className="relative">
-              <Button variant={"ghost"} size={"icon"} aria-label="Cart">
-                <ShoppingCart />
-              </Button>
+              <Link href="/cart">
+                <Button
+                  className={"rounded-xs hover:bg-foreground/10"}
+                  variant={"ghost"}
+                  size={"icon"}
+                  aria-label="Cart"
+                >
+                  <ShoppingCart />
+                </Button>
+              </Link>
               <span className="absolute -top-1 -right-1 flex px-0.5 items-center justify-center rounded-xs bg-red-500 text-xs font-semibold text-white">
                 5
               </span>
             </div>
-            <Button variant={"ghost"} size={"icon"} aria-label="User">
+            <Button
+              className={"rounded-xs hover:bg-foreground/10"}
+              variant={"ghost"}
+              size={"icon"}
+              aria-label="User"
+            >
               <User />
             </Button>
           </div>
 
           {/* Mobile Actions */}
           <div className="flex items-center gap-2 md:hidden">
-            <Button variant={"ghost"} size={"icon"} aria-label="Search">
+            <Button
+              className={"rounded-xs hover:bg-foreground/10"}
+              variant={"ghost"}
+              size={"icon"}
+              aria-label="Search"
+            >
               <Search />
             </Button>
             <div className="relative">
-              <Button variant={"ghost"} size={"icon"} aria-label="Cart">
+              <Button
+                className={"rounded-xs hover:bg-foreground/10"}
+                variant={"ghost"}
+                size={"icon"}
+                aria-label="Cart"
+              >
                 <ShoppingCart />
               </Button>
               <span className="absolute -top-1 -right-1 flex px-0.5 items-center justify-center rounded-xs bg-red-500 text-xs font-semibold text-white">

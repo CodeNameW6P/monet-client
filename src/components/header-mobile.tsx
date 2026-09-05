@@ -1,12 +1,12 @@
 "use client";
 import Link from "next/link";
-import { Menu, User, Heart } from "lucide-react";
+import { Menu, User, Heart, X } from "lucide-react";
 import {
   Sheet,
-  //   SheetClose,
+  SheetClose,
   SheetContent,
-  //   SheetDescription,
-  //   SheetFooter,
+  // SheetDescription,
+  // SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -26,14 +26,37 @@ const HeaderMobile = () => {
       <Sheet>
         <SheetTrigger
           render={
-            <Button variant={"ghost"} size={"icon"} aria-label="Menu">
+            <Button
+              className={"rounded-xs hover:bg-foreground/10"}
+              variant={"ghost"}
+              size={"icon"}
+              aria-label="Menu"
+            >
               <Menu />
             </Button>
           }
         />
-        <SheetContent>
-          <SheetHeader>
-            <SheetTitle className={"text-2xl font-semibold"}>MONET</SheetTitle>
+        <SheetContent showCloseButton={false}>
+          <SheetHeader className={"flex flex-row items-center justify-between"}>
+            <SheetTitle
+              className={
+                "text-2xl text-foreground font-semibold tracking-tighter"
+              }
+            >
+              M O N E T
+            </SheetTitle>
+            <SheetClose
+              render={
+                <Button
+                  className={"rounded-xs hover:bg-foreground/10"}
+                  variant={"ghost"}
+                  size={"icon"}
+                  aria-label="X"
+                >
+                  <X />
+                </Button>
+              }
+            />
             {/* <SheetDescription>
               Make changes to your profile here. Click save when you&apos;re
               done.

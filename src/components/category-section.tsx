@@ -32,7 +32,7 @@ const categories = [
 const CategorySection: React.FC = () => {
   return (
     <>
-      <section className="bg-background py-16 md:py-24">
+      <section className="bg-background py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           {/* Heading */}
           <div className="mb-10 flex items-end justify-between gap-4">
