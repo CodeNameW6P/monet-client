@@ -69,3 +69,6 @@ pnpm-debug.log*
 yarn-error.log
 *.log
 *.log.*
+
+certbot/conf
+certbot/www

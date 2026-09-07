@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "./ui/button";
 import { Heart, Search, ShoppingCart, User } from "lucide-react";
 import HeaderMobile from "./header-mobile";
@@ -18,9 +19,9 @@ const Header: React.FC = () => {
           {/* Logo */}
           <Link
             href="/homepage"
-            className="text-4xl text-foreground font-comfortaa tracking-widest"
+            // className="text-4xl text-foreground font-comfortaa tracking-widest"
           >
-            monet
+            <Image src="/logo.png" alt="Monet Logo" width={140} height={140} />
           </Link>
 
           {/* Desktop Navigation */}

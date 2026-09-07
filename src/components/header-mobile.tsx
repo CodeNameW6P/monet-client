@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, User, Heart, X } from "lucide-react";
 import {
   Sheet,
@@ -39,11 +40,16 @@ const HeaderMobile = () => {
         <SheetContent showCloseButton={false}>
           <SheetHeader className={"flex flex-row items-center justify-between"}>
             <SheetTitle
-              className={
-                "text-2xl text-foreground font-semibold tracking-tighter"
-              }
+            // className={
+            //   "text-2xl text-foreground font-semibold tracking-tighter"
+            // }
             >
-              M O N E T
+              <Image
+                src="/logo.png"
+                alt="Monet Logo"
+                width={140}
+                height={140}
+              />
             </SheetTitle>
             <SheetClose
               render={
