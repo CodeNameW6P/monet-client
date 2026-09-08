@@ -47,7 +47,7 @@ export default function CartPage() {
                   className="relative size-28 shrink-0 overflow-hidden rounded-lg bg-muted sm:size-36"
                 >
                   <Image
-                    src={item.product.image}
+                    src={item.product.image[0]}
                     alt={item.product.name}
                     fill
                     sizes="144px"
