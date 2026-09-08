@@ -1,11 +1,26 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import { mockProducts } from "@/lib/fake-products";
 import { Button } from "@/components/ui/button";
 import { Heart } from "lucide-react";
 import ProductCard from "@/components/product-card";
+import { useParams } from "next/navigation";
 
 export default function ProductPage() {
-  const product = mockProducts[0];
+  const params = useParams();
+  const product = mockProducts.find((p) => p.id === Number(params.id));
+
+  if (!product) {
+    return (
+      <main className="flex min-h-screen items-center justify-center">
+        <p className="text-lg font-semibold text-muted-foreground">
+          Product not found.
+        </p>
+      </main>
+    );
+  }
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   return (
     <main>
@@ -19,11 +34,13 @@ export default function ProductPage() {
               {/* Main image */}
               <div className="relative aspect-square overflow-hidden rounded-xl bg-muted">
                 <Image
-                  src={product.image}
+                  src={product.image[currentImageIndex]}
                   alt={product.name}
                   fill
-                  priority
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  // priority
+                  // sizes="(max-width: 1024px) 100vw, 50vw"
+                  // width={314}
+                  // height={314}
                   className="object-cover"
                 />
               </div>
@@ -35,12 +52,13 @@ export default function ProductPage() {
                     key={thumbnail}
                     type="button"
                     className="relative aspect-square overflow-hidden rounded-lg border bg-muted transition-colors hover:border-foreground"
+                    onClick={() => setCurrentImageIndex(thumbnail - 1)}
                   >
                     <Image
-                      src={product.image}
+                      src={product.image[thumbnail - 1] || product.image[0]}
                       alt={`${product.name} view ${thumbnail}`}
                       fill
-                      sizes="(max-width: 640px) 25vw, 12vw"
+                      // sizes="(max-width: 640px) 25vw, 12vw"
                       className="object-cover"
                     />
                   </button>

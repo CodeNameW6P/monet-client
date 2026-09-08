@@ -72,7 +72,7 @@ const Header: React.FC = () => {
                 </Button>
               </Link>
               <span className="absolute -top-1 -right-1 flex px-0.5 items-center justify-center rounded-xs bg-red-500 text-xs font-semibold text-white">
-                5
+                0
               </span>
             </div>
             <Button

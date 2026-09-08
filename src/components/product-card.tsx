@@ -8,7 +8,7 @@ export type Product = {
   name: string;
   category: string;
   price: number;
-  image: string;
+  image: string[];
   badge?: string;
   originalPrice?: number;
 };
@@ -19,10 +19,12 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
       <div className="relative aspect-square overflow-hidden rounded-lg bg-muted">
         <Link className={"absolute inset-0"} href={`/products/${product.id}`}>
           <Image
-            src={product.image}
+            src={product.image[0]}
             alt={product.name}
-            fill
-            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 25vw"
+            // fill
+            // sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 25vw"
+            width={300}
+            height={300}
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </Link>

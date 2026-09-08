@@ -2,12 +2,20 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Countdown from "./countdown";
+import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
     <section className="relative overflow-hidden bg-foreground">
       <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-7xl items-center justify-center px-4 py-12 md:px-6 lg:py-16">
         <div className="relative z-10 flex w-full flex-col items-center text-center text-background">
+          <Image
+            className="mb-6"
+            src={"/images/monet-logo.jpg"}
+            alt="monet-logo"
+            width={400}
+            height={200}
+          />
           {/* Badge */}
           <span className="mb-6 inline-flex items-center rounded-xs bg-accent px-4 py-2 text-xs font-bold uppercase tracking-widest text-accent-foreground">
             Grand Opening
