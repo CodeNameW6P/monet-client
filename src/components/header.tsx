@@ -21,7 +21,12 @@ const Header: React.FC = () => {
             href="/homepage"
             // className="text-4xl text-foreground font-comfortaa tracking-widest"
           >
-            <Image src="/logo.png" alt="Monet Logo" width={140} height={140} />
+            <Image
+              src="/logo-color.png"
+              alt="Monet Logo"
+              width={200}
+              height={160}
+            />
           </Link>
 
           {/* Desktop Navigation */}
