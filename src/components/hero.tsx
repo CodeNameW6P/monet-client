@@ -6,26 +6,43 @@ import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative overflow-hidden bg-foreground">
-      <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-7xl items-center justify-center px-4 py-12 md:px-6 lg:py-16">
-        <div className="relative z-10 flex w-full flex-col items-center text-center text-background">
+    <section className="relative min-h-[calc(100vh-4rem)] overflow-hidden bg-foreground">
+      {/* Background video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        aria-hidden="true"
+        className="absolute inset-0 z-0 h-full w-full object-cover"
+      >
+        <source src="/vids/bgvid.mp4" type="video/mp4" />
+      </video>
+
+      {/* Optional dark overlay for readability */}
+      <div className="absolute inset-0 z-[1] bg-black/40" />
+
+      {/* Hero content */}
+      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-4rem)] max-w-7xl items-center justify-center px-4 py-12 md:px-6 lg:py-16">
+        <div className="flex w-full flex-col items-center text-center text-background">
           <Image
             className="mb-6"
-            src={"/images/monet-logo.jpg"}
+            src="/images/monet-logo.png"
             alt="monet-logo"
             width={400}
             height={200}
           />
+
           {/* Badge */}
           <span className="mb-6 inline-flex items-center rounded-xs bg-accent px-4 py-2 text-xs font-bold uppercase tracking-widest text-accent-foreground">
             Grand Opening
           </span>
 
           {/* Heading */}
-          <h1 className="max-w-4xl text-5xl font-bold uppercase leading-[0.9] sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+          <h1 className="flex max-w-4xl flex-col items-center text-5xl font-bold uppercase leading-[0.9] sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
             Step Into
             <br />
-            Monet
+            <Image src="/monet.png" alt="Step Into" width={800} height={400} />
           </h1>
 
           {/* Description */}
@@ -55,7 +72,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Bottom accent */}
-      <div className="absolute bottom-0 left-0 h-1 w-full bg-accent" />
+      <div className="absolute bottom-0 left-0 z-20 h-1 w-full bg-accent" />
     </section>
   );
 };

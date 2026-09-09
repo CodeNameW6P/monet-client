@@ -3,7 +3,7 @@ import type { Product } from "@/components/product-card";
 export const mockProducts: Product[] = [
   {
     id: 1,
-    name: "Air Runner",
+    name: "Colors of Dhaka",
     category: "Casual Sneakers",
     price: 5500,
     image: [
@@ -16,7 +16,7 @@ export const mockProducts: Product[] = [
   },
   {
     id: 2,
-    name: "Street Force",
+    name: "Spring Spirit",
     category: "Casual Sneakers",
     price: 4800,
     image: ["/images/products/t1.jpeg"],

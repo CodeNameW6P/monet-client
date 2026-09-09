@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
     <>
       <main>
         <Hero />
-        <CategorySection />
+        {/* <CategorySection /> */}
         <NewArrivals />
         <PromoBanner />
         <BestSellers />
