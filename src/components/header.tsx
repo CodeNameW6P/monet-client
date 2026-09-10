@@ -1,15 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { Heart, Search, ShoppingCart, User } from "lucide-react";
-import HeaderMobile from "./header-mobile";
-
-const navigation = [
-  { label: "New Arrivals", href: "/categories/new-arrivals" },
-  { label: "Best Sellers", href: "/categories/best-sellers" },
-  { label: "Men", href: "/categories/men" },
-  { label: "Women", href: "/categories/women" },
-];
+import { Heart, ShoppingCart, User } from "lucide-react";
 
 const Header: React.FC = () => {
   return (
@@ -29,29 +21,8 @@ const Header: React.FC = () => {
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-8 md:flex">
-            {navigation.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="text-md font-semibold text-foreground underline-offset-4 hover:underline"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-
           {/* Desktop Actions */}
-          <div className="hidden items-center gap-2 md:flex">
-            <Button
-              className={"rounded-xs hover:bg-foreground/10"}
-              variant={"ghost"}
-              size={"icon"}
-              aria-label="Search"
-            >
-              <Search />
-            </Button>
+          <div className="flex items-center gap-2">
             <div className="relative">
               <Button
                 className={"rounded-xs hover:bg-foreground/10"}
@@ -91,15 +62,7 @@ const Header: React.FC = () => {
           </div>
 
           {/* Mobile Actions */}
-          <div className="flex items-center gap-2 md:hidden">
-            <Button
-              className={"rounded-xs hover:bg-foreground/10"}
-              variant={"ghost"}
-              size={"icon"}
-              aria-label="Search"
-            >
-              <Search />
-            </Button>
+          {/* <div className="flex items-center gap-2 md:hidden">
             <div className="relative">
               <Button
                 className={"rounded-xs hover:bg-foreground/10"}
@@ -110,11 +73,10 @@ const Header: React.FC = () => {
                 <ShoppingCart />
               </Button>
               <span className="absolute -top-1 -right-1 flex px-0.5 items-center justify-center rounded-xs bg-red-500 text-xs font-semibold text-white">
-                5
+                0
               </span>
             </div>
-            <HeaderMobile />
-          </div>
+          </div> */}
         </div>
       </header>
     </>

@@ -35,14 +35,14 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
           </span>
         )}
 
-        <Button
+        {/* <Button
           variant="secondary"
           size="icon"
           className="absolute right-3 top-3 size-9 rounded-full bg-white/90 shadow-sm backdrop-blur-sm hover:bg-white"
           aria-label={`Add ${product.name} to wishlist`}
         >
           <Heart />
-        </Button>
+        </Button> */}
       </div>
 
       <div className="mt-4 space-y-1">

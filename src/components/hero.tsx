@@ -34,9 +34,9 @@ const Hero: React.FC = () => {
           />
 
           {/* Badge */}
-          <span className="mb-6 inline-flex items-center rounded-xs bg-accent px-4 py-2 text-xs font-bold uppercase tracking-widest text-accent-foreground">
+          {/* <span className="mb-6 inline-flex items-center rounded-xs bg-accent px-4 py-2 text-xs font-bold uppercase tracking-widest text-accent-foreground">
             Grand Opening
-          </span>
+          </span> */}
 
           {/* Heading */}
           <h1 className="flex max-w-4xl flex-col items-center text-5xl font-bold uppercase leading-[0.9] sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
