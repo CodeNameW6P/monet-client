@@ -3,14 +3,14 @@ import type { Product } from "@/components/product-card";
 export const mockProducts: Product[] = [
   {
     id: 1,
-    name: "Colors of Dhaka",
+    name: "Tales of Dhaka",
     category: "Casual Sneakers",
-    price: 5500,
+    price: 2990,
     image: [
-      "/images/products/s1.png",
-      "/images/products/s2.png",
-      "/images/products/s3.png",
-      "/images/products/s4.png",
+      "/images/products/sn0.png",
+      "/images/products/sn1.png",
+      "/images/products/sn2.png",
+      "/images/products/sn3.png",
     ],
     badge: "new",
   },

@@ -20,10 +20,10 @@ const Hero: React.FC = () => {
       </video>
 
       {/* Optional dark overlay for readability */}
-      <div className="absolute inset-0 z-[1] bg-black/40" />
+      <div className="absolute inset-0 z-[1] bg-black/60" />
 
       {/* Hero content */}
-      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-4rem)] max-w-7xl items-center justify-center px-4 py-12 md:px-6 lg:py-16">
+      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-4rem)] max-w-8xl items-center justify-center px-4 py-12 md:px-6 lg:py-16">
         <div className="flex w-full flex-col items-center text-center text-background">
           <Image
             className="mb-6"
@@ -39,16 +39,19 @@ const Hero: React.FC = () => {
           </span> */}
 
           {/* Heading */}
-          <h1 className="flex max-w-4xl flex-col items-center text-5xl font-bold uppercase leading-[0.9] sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+          <h1 className="flex max-w-4xl flex-col items-center text-5xl font-bold uppercase sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
             Step Into
             <br />
             <Image src="/monet.png" alt="Step Into" width={800} height={400} />
           </h1>
 
+          <h1 className="text-5xl font-bold uppercase sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+            Break the Crowd
+          </h1>
+
           {/* Description */}
-          <p className="mt-6 max-w-lg text-base leading-relaxed text-background/70 sm:text-lg">
-            A new way to move is almost here. Discover everyday sneakers
-            designed to move differently.
+          <p className="mt-6 leading-relaxed text-base text-background/70 md:text-2xl">
+            This isn't for everyone - and we never wanted it to be.
           </p>
 
           {/* Countdown */}

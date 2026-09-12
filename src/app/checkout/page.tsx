@@ -6,6 +6,14 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function CheckoutPage() {
   return (
@@ -56,20 +64,39 @@ export default function CheckoutPage() {
                 <div>
                   <Label htmlFor="first-name">First name</Label>
 
-                  <Input
-                    id="first-name"
-                    placeholder="John"
-                    className="mt-2 h-11"
-                  />
+                  <Input id="first-name" placeholder="John" className="mt-2" />
                 </div>
 
                 <div>
                   <Label htmlFor="last-name">Last name</Label>
 
+                  <Input id="last-name" placeholder="Doe" className="mt-2" />
+                </div>
+
+                <div>
+                  <Label htmlFor="gender">Gender</Label>
+
+                  <Select>
+                    <SelectTrigger className="mt-2 h-full w-full">
+                      <SelectValue placeholder="Gender" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectGroup>
+                        <SelectItem value={"Male"}>Male</SelectItem>
+                        <SelectItem value={"Female"}>Female</SelectItem>
+                      </SelectGroup>
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div>
+                  <Label htmlFor="age">Age</Label>
+
                   <Input
-                    id="last-name"
-                    placeholder="Doe"
-                    className="mt-2 h-11"
+                    id="age"
+                    type="number"
+                    placeholder="25"
+                    className="mt-2"
                   />
                 </div>
 
@@ -80,7 +107,7 @@ export default function CheckoutPage() {
                     id="phone"
                     type="tel"
                     placeholder="01XXXXXXXXX"
-                    className="mt-2 h-11"
+                    className="mt-2"
                   />
                 </div>
 
@@ -97,7 +124,7 @@ export default function CheckoutPage() {
                 <div>
                   <Label htmlFor="city">City</Label>
 
-                  <Input id="city" placeholder="Dhaka" className="mt-2 h-11" />
+                  <Input id="city" placeholder="Dhaka" className="mt-2" />
                 </div>
 
                 <div>
@@ -106,7 +133,8 @@ export default function CheckoutPage() {
                   <Input
                     id="postal-code"
                     placeholder="1200"
-                    className="mt-2 h-11"
+                    className="mt-2"
+                    type="number"
                   />
                 </div>
               </div>

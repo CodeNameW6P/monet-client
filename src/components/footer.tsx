@@ -1,19 +1,18 @@
 import Link from "next/link";
 import { Mail, MapPin, Phone, ShoppingBag } from "lucide-react";
 
-const shopLinks = [
-  { label: "Men", href: "/categories/men" },
-  { label: "Women", href: "/categories/women" },
-  { label: "Sneakers", href: "/categories/sneakers" },
-  { label: "Sports", href: "/categories/sports" },
-  { label: "Sale", href: "/sale" },
-];
+// const shopLinks = [
+//   { label: "Men", href: "/categories/men" },
+//   { label: "Women", href: "/categories/women" },
+//   { label: "Sneakers", href: "/categories/sneakers" },
+//   { label: "Sports", href: "/categories/sports" },
+//   { label: "Sale", href: "/sale" },
+// ];
 
 const helpLinks = [
-  { label: "Contact Us", href: "/contact" },
+  { label: "About Us", href: "/about" },
   { label: "Shipping", href: "/shipping" },
   { label: "Returns", href: "/returns" },
-  { label: "FAQ", href: "/faq" },
 ];
 
 const accountLinks = [
@@ -48,7 +47,7 @@ export function Footer() {
 
               <div className="flex items-center gap-3">
                 <Mail className="size-4" />
-                <span>monet@example.com</span>
+                <span>support@monetwear.com</span>
               </div>
 
               <div className="flex items-center gap-3">
@@ -59,7 +58,7 @@ export function Footer() {
           </div>
 
           {/* Shop */}
-          <div>
+          {/* <div>
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-background/50">
               Shop
             </h3>
@@ -76,7 +75,7 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Help */}
           <div>
