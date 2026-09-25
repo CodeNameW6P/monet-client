@@ -14,9 +14,9 @@ export const mockProducts: Product[] = [
       "/images/products/s5.png",
       "/images/products/s6.png",
     ],
-    badge: "limited drop: 300x",
+    badge: "300x",
     description:
-      "Some people aren't made to fit in, no matter how hard they try.",
+      "A burst of color for every step. Colors of Spring brings playful tones and effortless street style together in a sneaker made to brighten your everyday.",
   },
   {
     id: 2,
@@ -31,8 +31,9 @@ export const mockProducts: Product[] = [
       "/images/products/p5.png",
       "/images/products/p6.png",
     ],
-    badge: "limited drop: 150x",
-    description: "This design isn't just postcards. It's a perspective.",
+    badge: "150x",
+    description:
+      "A forgotten piece of the city. Postcards of Dhaka takes you back in a time when conversations used to be detailed and emphasized.",
   },
   // {
   //   id: 3,

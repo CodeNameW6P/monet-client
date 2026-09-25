@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
           </h1>
           {/* Description */}
           <p className="text-background/70 text-base sm:text-lg md:text-2xl mt-8">
-            This isn't for everyone - and we never wanted it to be.
+            If it isn't for everyone - don't be everyone
           </p>
           {/* Countdown */}
           <div className="mt-10">
@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
               className="bg-accent font-semibold text-accent-foreground hover:bg-accent/80"
             >
               <Link href="/products" className="flex items-center gap-1">
-                Discover MONET
+                Shop on MONET
                 <ArrowRight />
               </Link>
             </Button>

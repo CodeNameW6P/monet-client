@@ -14,8 +14,8 @@ export default function ProductPage() {
   if (!product) {
     return (
       <main className="flex min-h-screen items-center justify-center">
-        <p className="text-lg font-semibold text-muted-foreground">
-          Product not found.
+        <p className="text-2xl font-semibold text-muted-foreground">
+          Nothing here.
         </p>
       </main>
     );
@@ -127,7 +127,7 @@ export default function ProductPage() {
                   type="button"
                   className="flex h-full w-10 items-center justify-center text-lg text-muted-foreground hover:text-foreground"
                 >
-                  −
+                  -
                 </button>
 
                 <span className="flex-1 text-center text-sm font-medium">

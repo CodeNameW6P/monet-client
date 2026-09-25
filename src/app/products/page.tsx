@@ -1,12 +1,9 @@
 import ProductCard from "@/components/product-card";
-import { ProductFilterSidebar } from "@/components/product-filter-sidebar";
-import { ProductToolbar } from "@/components/product-toolbar";
 import { mockProducts } from "@/lib/fake-products";
 
 export default function ProductsPage() {
   return (
     <main>
-      {/* Page heading */}
       <section className="border-b bg-background">
         <div className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16">
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-muted-foreground">
@@ -23,21 +20,11 @@ export default function ProductsPage() {
           </p>
         </div>
       </section>
-
-      {/* Products */}
       <section className="bg-background">
-        <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
-          <ProductToolbar productCount={mockProducts.length} />
-          <div className="mt-8 flex gap-8">
-            {/* Product grid */}
-            <div className="min-w-0 flex-1">
-              <div className="grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-6 md:grid-cols-3 lg:gap-x-8 lg:gap-y-12">
-                {mockProducts.map((product) => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
-              </div>
-            </div>
-          </div>
+        <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-6 md:grid-cols-3 lg:gap-x-8 lg:gap-y-12">
+          {mockProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
         </div>
       </section>
     </main>

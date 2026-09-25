@@ -1,6 +1,8 @@
 import Hero from "@/components/hero";
-import PromoBanner from "@/components/promo-banner";
+import PromoBanner1 from "@/components/promo-banner-1";
+import PromoBanner2 from "@/components/promo-banner-2";
 import { StoreBenefits } from "@/components/store-benefits";
+import { Testimonials } from "@/components/testimonials";
 import { mockProducts } from "@/lib/fake-products";
 
 const HomePage: React.FC = () => {
@@ -10,16 +12,16 @@ const HomePage: React.FC = () => {
         <Hero />
         {/* <CategorySection /> */}
         {/* <NewArrivals /> */}
-        <PromoBanner
+        <PromoBanner1
           product={mockProducts[0]}
           bannerImage="/images/repeat_1.png"
         />
-        <PromoBanner
+        <PromoBanner2
           product={mockProducts[1]}
           bannerImage="/images/repeat_2.tif"
         />
         {/* <BestSellers /> */}
-        <StoreBenefits />
+        <Testimonials />
       </main>
     </>
   );
