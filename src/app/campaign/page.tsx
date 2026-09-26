@@ -5,6 +5,12 @@ import { Button } from "@/components/ui/button";
 const OceanDriftPage: React.FC = () => {
   return (
     <main>
+      <Button
+        size="lg"
+        className="fixed bottom-8 left-1/2 z-50 h-12 -translate-x-1/2 rounded-md bg-amber-600 px-6 font-bold shadow-2xl transition-transform hover:scale-105 hover:bg-amber-500 sm:bottom-6 sm:h-14 sm:px-8"
+      >
+        <Link href="/products/2">Buy Ocean Drift</Link>
+      </Button>
       {/* FIXED BACKGROUND — stays behind entire campaign */}
       <div
         className="fixed inset-0 -z-20 bg-cover bg-center"
@@ -97,7 +103,7 @@ const OceanDriftPage: React.FC = () => {
                 </p>
               </div>
 
-              <div className="mt-10">
+              {/* <div className="mt-10">
                 <Button
                   //   asChild
                   size="lg"
@@ -105,7 +111,7 @@ const OceanDriftPage: React.FC = () => {
                 >
                   <Link href={`/products/2`}>Buy Now</Link>
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -227,7 +233,7 @@ const OceanDriftPage: React.FC = () => {
                 with you.
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-3">
+              {/* <div className="mt-8 flex flex-wrap gap-3">
                 <Button
                   //   asChild
                   size="lg"
@@ -235,7 +241,7 @@ const OceanDriftPage: React.FC = () => {
                 >
                   <Link href={`/products/2`}>Buy Now</Link>
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
