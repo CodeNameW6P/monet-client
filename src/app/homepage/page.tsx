@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
         />
         <PromoBanner2
           product={mockProducts[1]}
-          bannerImage="/images/repeat_2.tif"
+          bannerImage="/images/bg-waves.png"
         />
         {/* <BestSellers /> */}
         <Testimonials />

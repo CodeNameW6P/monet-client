@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-foreground">
+    <section className="relative min-h-[calc(100vh-72px)] overflow-hidden bg-foreground">
       <video
         autoPlay
         muted
