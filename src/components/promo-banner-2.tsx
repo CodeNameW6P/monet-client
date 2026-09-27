@@ -41,7 +41,7 @@ const PromoBanner2: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
                 >
                   <Link
                     // href={`/products/${product.id}`}
-                    href="/campaign"
+                    href="/campaign/ocean-drift"
                     className="flex items-center gap-1"
                   >
                     Get Yours Now <ArrowRight />
@@ -55,7 +55,7 @@ const PromoBanner2: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
                   <Link
                     className={"absolute inset-0"}
                     // href={`/products/${product.id}`}
-                    href="/campaign"
+                    href="/campaign/ocean-drift"
                   >
                     <Image
                       src={product.image[0]}
@@ -74,7 +74,7 @@ const PromoBanner2: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
                 <div className="mt-2 space-y-1">
                   <Link
                     // href={`/products/${product.id}`}
-                    href="/campaign"
+                    href="/campaign/ocean-drift"
                   >
                     <h3 className="text-lg font-semibold transition-colors group-hover:text-foreground/80">
                       {product.name}

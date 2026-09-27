@@ -29,7 +29,8 @@ const PromoBanner1: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
                 <div className="relative aspect-square overflow-hidden rounded-lg bg-muted">
                   <Link
                     className="absolute inset-0"
-                    href={`/products/${product.id}`}
+                    // href={`/products/${product.id}`}
+                    href="/compaign/colors-of-spring"
                   >
                     <Image
                       src={product.image[0]}
@@ -48,7 +49,10 @@ const PromoBanner1: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
                 </div>
 
                 <div className="mt-2 space-y-1">
-                  <Link href={`/products/${product.id}`}>
+                  <Link
+                    // href={`/products/${product.id}`}
+                    href="/campaign/colors-of-spring"
+                  >
                     <h3 className="text-lg font-semibold transition-colors group-hover:text-foreground/80">
                       {product.name}
                     </h3>
@@ -77,7 +81,8 @@ const PromoBanner1: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
                   className="bg-accent font-semibold text-accent-foreground hover:bg-accent/90"
                 >
                   <Link
-                    href={`/products/${product.id}`}
+                    // href={`/products/${product.id}`}
+                    href="/campaign/colors-of-spring"
                     className="flex items-center gap-1"
                   >
                     Get Yours Now <ArrowRight />
