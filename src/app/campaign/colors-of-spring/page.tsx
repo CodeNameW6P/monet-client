@@ -9,17 +9,17 @@ const OceanDriftPage: React.FC = () => {
         size="lg"
         className="fixed bottom-8 left-1/2 z-50 h-12 -translate-x-1/2 rounded-md bg-amber-600 px-6 font-bold shadow-2xl transition-transform hover:scale-105 hover:bg-amber-500 sm:bottom-6 sm:h-14 sm:px-8"
       >
-        <Link href="/products/2">Get Yours Now</Link>
+        <Link href="/products/1">Get Yours Now</Link>
       </Button>
       {/* FIXED BACKGROUND — stays behind entire campaign */}
-      <div
+      {/* <div
         className="fixed inset-0 -z-20 bg-cover bg-center"
         style={{
           backgroundImage: "url('/images/bg-spring.png')",
         }}
-      />
+      /> */}
 
-      {/* <video
+      <video
         className="fixed inset-0 -z-20 h-full w-full object-cover"
         autoPlay
         muted
@@ -28,10 +28,10 @@ const OceanDriftPage: React.FC = () => {
         preload="auto"
       >
         <source
-          src="https://res.cloudinary.com/drljdua7o/video/upload/v1790496182/Video_Project_6.mp4"
+          src="https://res.cloudinary.com/drljdua7o/video/upload/v1790587160/Video_Project_7.mp4"
           type="video/mp4"
         />
-      </video> */}
+      </video>
 
       {/* BLACK TINT — also stays fixed */}
       <div className="fixed inset-0 -z-10 bg-black/60" />
