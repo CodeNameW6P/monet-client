@@ -7,6 +7,8 @@ services:
     restart: unless-stopped
     expose:
       - "3000"
+    networks:
+      - monet-proxy
 
   nginx:
     image: nginx:alpine
@@ -21,6 +23,8 @@ services:
       - ./certbot/conf:/etc/letsencrypt:ro
     depends_on:
       - nextjs
+    networks:
+      - monet-proxy
 
   certbot:
     image: certbot/certbot:latest
@@ -28,3 +32,7 @@ services:
     volumes:
       - ./certbot/www:/var/www/certbot
       - ./certbot/conf:/etc/letsencrypt
+
+networks:
+  monet-proxy:
+    external: true

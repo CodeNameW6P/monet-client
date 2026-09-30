@@ -1,7 +1,6 @@
 import Hero from "@/components/hero";
 import PromoBanner1 from "@/components/promo-banner-1";
 import PromoBanner2 from "@/components/promo-banner-2";
-import { StoreBenefits } from "@/components/store-benefits";
 import { Testimonials } from "@/components/testimonials";
 import { mockProducts } from "@/lib/fake-products";
 
