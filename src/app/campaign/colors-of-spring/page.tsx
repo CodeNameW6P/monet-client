@@ -58,13 +58,13 @@ const OceanDriftPage: React.FC = () => {
                   Monet / Colors of Spring
                 </p>
 
-                <h1 className="text-5xl font-bold uppercase leading-[0.88] tracking-tight sm:text-6xl md:text-8xl">
+                <h1 className="text-5xl leading-[0.88] tracking-widest sm:text-6xl md:text-8xl font-fleur-de-leah font-bold">
                   Made to
                   <br />
                   move different.
                 </h1>
 
-                <p className="mt-8 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+                <p className="mt-8 max-w-xl text-2xl leading-relaxed text-white font-arizonia">
                   Colors of Spring is made for blending in with the nature.
                   Built for those who move elegantly.
                 </p>
@@ -93,13 +93,13 @@ const OceanDriftPage: React.FC = () => {
                 Colors of Spring
               </p>
 
-              <h2 className="text-4xl font-bold text-background uppercase leading-[0.95] tracking-tight sm:text-5xl md:text-6xl">
+              <h2 className="text-4xl font-bold text-background leading-[0.95] tracking-widest sm:text-5xl md:text-6xl font-fleur-de-leah">
                 Not made
                 <br />
                 to disappear.
               </h2>
 
-              <div className="mt-8 space-y-5 text-background">
+              <div className="mt-8 space-y-5 text-background font-arizonia text-lg sm:text-xl md:text-2xl">
                 <p>
                   Colors of Spring was designed for the ones who don't want
                   another ordinary pair of sneakers.
@@ -138,22 +138,20 @@ const OceanDriftPage: React.FC = () => {
                 The Design
               </p>
 
-              <h2 className="text-4xl font-bold text-background uppercase leading-[0.95] tracking-tight sm:text-5xl md:text-6xl">
+              <h2 className="text-4xl font-bold text-background leading-[0.95] tracking-widest sm:text-5xl md:text-6xl font-fleur-de-leah">
                 For the pure.
                 <br />
-                Not the
-                <br />
-                norm.
+                Not the norm.
               </h2>
 
-              <p className="mt-8 max-w-xl leading-relaxed text-background">
+              <p className="mt-8 max-w-xl leading-relaxed text-background font-arizonia text-lg sm:text-xl md:text-2xl">
                 Colors of Spring takes a familiar sneaker silhouette and pushes
                 it somewhere louder. The proportions, layered details, and
                 contrasting elements give it a presence that doesn't need
                 explaining.
               </p>
 
-              <p className="mt-5 max-w-xl leading-relaxed text-background">
+              <p className="mt-5 max-w-xl leading-relaxed text-background font-arizonia text-lg sm:text-xl md:text-2xl">
                 It's the kind of shoe that changes the way an outfit feels
                 without asking for permission.
               </p>
@@ -235,16 +233,16 @@ const OceanDriftPage: React.FC = () => {
                 Colors of Spring
               </p>
 
-              <h2 className="text-4xl font-bold uppercase leading-tight tracking-tight sm:text-5xl text-background">
+              <h2 className="text-4xl font-bold leading-tight tracking-widest sm:text-5xl text-background font-fleur-de-leah">
                 Your next
                 <br />
                 favorite pair.
               </h2>
 
-              <p className="mt-6 max-w-xl leading-relaxed text-background">
-                Whether you're heading into the city, meeting friends, or simply
-                going wherever the day takes you, Ocean Drift is built to go
-                with you.
+              <p className="mt-6 max-w-xl leading-relaxed text-background font-arizonia text-lg sm:text-xl md:text-2xl">
+                From city strolls to spontaneous plans, Colors of Spring brings
+                a burst of color to wherever life takes you. Made to stand out,
+                designed to brighten every step.
               </p>
 
               {/* <div className="mt-8 flex flex-wrap gap-3">
@@ -268,65 +266,17 @@ const OceanDriftPage: React.FC = () => {
                 Built For Everyday
               </p>
 
-              <h2 className="text-4xl font-bold uppercase leading-tight tracking-tight sm:text-5xl">
+              <h2 className="text-4xl font-bold leading-tight tracking-widest sm:text-5xl text-background font-fleur-de-leah">
                 Looks elegant.
                 <br />
                 Feels effortless.
               </h2>
 
-              <p className="mt-6 max-w-2xl leading-relaxed">
+              <p className="mt-6 max-w-2xl leading-relaxed font-arizonia text-lg sm:text-xl md:text-2xl">
                 Colors of Spring brings together the visual character you want
                 with the everyday comfort you need. Because a statement sneaker
                 means nothing if you can't actually live in it.
               </p>
-            </div>
-
-            {/* Features */}
-            <div className="mt-16 grid gap-10 border-t pt-10 md:grid-cols-3">
-              <div>
-                <span className="text-sm font-semibold text-muted-foreground">
-                  01
-                </span>
-
-                <h3 className="mt-4 text-2xl font-bold uppercase">
-                  Bold Silhouette
-                </h3>
-
-                <p className="mt-4 leading-relaxed">
-                  A distinctive shape designed to stand out from the usual
-                  everyday sneaker.
-                </p>
-              </div>
-
-              <div>
-                <span className="text-sm font-semibold text-muted-foreground">
-                  02
-                </span>
-
-                <h3 className="mt-4 text-2xl font-bold uppercase">
-                  Everyday Comfort
-                </h3>
-
-                <p className="mt-4 leading-relaxed">
-                  Designed to keep up with your everyday movement without
-                  sacrificing style.
-                </p>
-              </div>
-
-              <div>
-                <span className="text-sm font-semibold text-muted-foreground">
-                  03
-                </span>
-
-                <h3 className="mt-4 text-2xl font-bold uppercase">
-                  Made To Stand Out
-                </h3>
-
-                <p className="mt-4 leading-relaxed">
-                  Strong visual details give Ocean Drift a presence wherever you
-                  take it.
-                </p>
-              </div>
             </div>
           </div>
         </section>

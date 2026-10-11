@@ -40,38 +40,21 @@ const PromoBanner1: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </Link>
-
-                  {product.badge && (
-                    <span className="absolute left-3 top-3 rounded-full bg-accent px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent-foreground">
-                      {product.badge}
-                    </span>
-                  )}
-                </div>
-
-                <div className="mt-2 space-y-1">
-                  <Link
-                    // href={`/products/${product.id}`}
-                    href="/campaign/colors-of-spring"
-                  >
-                    <h3 className="text-lg font-semibold transition-colors group-hover:text-foreground/80">
-                      {product.name}
-                    </h3>
-                  </Link>
                 </div>
               </article>
             </div>
 
             {/* Text — RIGHT */}
             <div className="max-w-xl text-white">
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-accent">
+              {/* <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-accent">
                 {product.badge}
-              </p>
+              </p> */}
 
-              <h2 className="text-4xl font-bold uppercase leading-[0.95] tracking-tight sm:text-5xl md:text-6xl">
+              <h2 className="text-4xl font-bold leading-[0.95] tracking-widest sm:text-5xl md:text-6xl font-fleur-de-leah">
                 {product.name}
               </h2>
 
-              <p className="mt-6 max-w-md text-sm leading-relaxed text-white/70 sm:text-base">
+              <p className="mt-6 max-w-md text-xl leading-relaxed text-white font-arizonia">
                 {product.description}
               </p>
 

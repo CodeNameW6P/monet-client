@@ -26,7 +26,7 @@ export function Footer() {
             </Link>
 
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-background/60">
-              If it isn't for everyone - don't be everyone
+              Wear what the crowd wouldn't dare.
             </p>
 
             {/* Contact */}
@@ -159,10 +159,7 @@ export function Footer() {
         <div className="mt-14 flex flex-col gap-4 border-t border-background/10 pt-6 text-xs text-background/40 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 MONET. All rights reserved.</p>
 
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
+          <p>Made in Bangladesh, Made for the World</p>
         </div>
       </div>
     </footer>

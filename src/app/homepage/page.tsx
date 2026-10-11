@@ -3,6 +3,7 @@ import PromoBanner1 from "@/components/promo-banner-1";
 import PromoBanner2 from "@/components/promo-banner-2";
 import { Testimonials } from "@/components/testimonials";
 import { mockProducts } from "@/lib/fake-products";
+import BrandBanner from "@/components/brand-banner";
 
 const HomePage: React.FC = () => {
   return (
@@ -20,7 +21,8 @@ const HomePage: React.FC = () => {
           bannerImage="/images/bg-waves.png"
         />
         {/* <BestSellers /> */}
-        <Testimonials />
+        {/* <Testimonials /> */}
+        <BrandBanner />
       </main>
     </>
   );

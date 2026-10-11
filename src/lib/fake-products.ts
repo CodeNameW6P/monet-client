@@ -15,8 +15,7 @@ export const mockProducts: Product[] = [
       "/images/products/s6.png",
     ],
     badge: "300x",
-    description:
-      "A burst of color for every step. Colors of Spring brings playful tones and effortless street style together in a sneaker made to brighten your everyday.",
+    description: "A burst of color in every step. Let your style bloom.",
   },
   {
     id: 2,
@@ -32,6 +31,6 @@ export const mockProducts: Product[] = [
       "/images/products/p6.png",
     ],
     badge: "150x",
-    description: "Every step is effortless, like drifting away in the ocean.",
+    description: "Inspired by the Bay of Bengal, for the untamed",
   },
 ];

@@ -2,13 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 export type Product = {
-  id: number;
+  id: string;
   name: string;
+  slug: string;
   category: string;
   price: number;
-  image: string[];
-  badge?: string;
-  originalPrice?: number;
+  images: string[];
+  badge?: string | null;
+  slashedPrice?: number | null;
   description: string;
 };
 
@@ -16,14 +17,12 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   return (
     <article className="group">
       <div className="relative aspect-square overflow-hidden rounded-lg bg-muted">
-        <Link className={"absolute inset-0"} href={`/products/${product.id}`}>
+        <Link className="absolute inset-0" href={`/products/${product.slug}`}>
           <Image
-            src={product.image[0]}
+            src={product.images[0] || "/images/placeholder.png"}
             alt={product.name}
             fill
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 25vw"
-            // width={300}
-            // height={300}
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </Link>
@@ -36,7 +35,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
       </div>
 
       <div className="mt-4 space-y-1">
-        <Link href={`/products/${product.id}`}>
+        <Link href={`/products/${product.slug}`}>
           <h3 className="text-lg font-semibold transition-colors group-hover:text-foreground/80">
             {product.name}
           </h3>
@@ -46,12 +45,12 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 
         <div className="mt-2 flex items-center gap-2">
           <span className="font-semibold">
-            BDT {product.price.toLocaleString("en-BD")}
+            BDT {Number(product.price).toLocaleString("en-BD")}
           </span>
 
-          {product.originalPrice && (
+          {product.slashedPrice != null && (
             <span className="text-sm text-muted-foreground line-through">
-              {product.originalPrice.toLocaleString("en-BD")}
+              BDT {Number(product.slashedPrice).toLocaleString("en-BD")}
             </span>
           )}
         </div>

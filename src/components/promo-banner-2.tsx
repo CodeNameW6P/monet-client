@@ -24,13 +24,13 @@ const PromoBanner2: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
           <div className="absolute inset-0 bg-linear-to-r from-black/90 via-black/65 to-black/20" />
           <div className="relative z-10 grid min-h-105 grid-cols-1 items-center gap-8 px-6 py-12 sm:min-h-120 sm:px-10 md:grid-cols-2 md:gap-12 md:px-14">
             <div className="max-w-xl text-white">
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-accent">
+              {/* <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-accent">
                 {product.badge}
-              </p>
-              <h2 className="text-4xl font-bold uppercase leading-[0.95] tracking-tight sm:text-5xl md:text-6xl">
+              </p> */}
+              <h2 className="text-4xl font-bold leading-[0.95] tracking-tight sm:text-5xl md:text-6xl font-kaushan-script">
                 {product.name}
               </h2>
-              <p className="mt-6 max-w-md text-sm leading-relaxed text-white/70 sm:text-base">
+              <p className="mt-6 max-w-md text-xl leading-relaxed text-white font-arizonia">
                 {product.description}
               </p>
               <div className="mt-8">
@@ -64,21 +64,6 @@ const PromoBanner2: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 25vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                  </Link>
-                  {product.badge && (
-                    <span className="absolute left-3 top-3 rounded-full bg-accent px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent-foreground">
-                      {product.badge}
-                    </span>
-                  )}
-                </div>
-                <div className="mt-2 space-y-1">
-                  <Link
-                    // href={`/products/${product.id}`}
-                    href="/campaign/ocean-drift"
-                  >
-                    <h3 className="text-lg font-semibold transition-colors group-hover:text-foreground/80">
-                      {product.name}
-                    </h3>
                   </Link>
                 </div>
               </article>

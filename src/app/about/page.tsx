@@ -23,13 +23,13 @@ const AboutPage: React.FC = () => {
                 About Monet
               </p>
 
-              <h1 className="text-5xl font-bold uppercase leading-[0.9] tracking-tight sm:text-6xl md:text-8xl">
+              <h1 className="text-5xl uppercase leading-[0.9] tracking-widest sm:text-6xl md:text-8xl font-kaushan-script">
                 This wasn't
                 <br />
                 supposed to exist.
               </h1>
 
-              <p className="mt-8 max-w-xl text-base leading-relaxed text-white sm:text-lg">
+              <p className="mt-8 max-w-xl text-2xl leading-relaxed text-white font-arizonia">
                 We came from a world built on discipline, structure, and fitting
                 into lines drawn by others. For a while, we played along. Then
                 we realized — some people aren't made to fit in, no matter how
@@ -48,7 +48,7 @@ const AboutPage: React.FC = () => {
               Our Story
             </p>
 
-            <h2 className="text-4xl font-bold uppercase leading-tight tracking-tight sm:text-5xl">
+            <h2 className="text-4xl uppercase leading-tight tracking-widest sm:text-5xl font-kaushan-script">
               So we left.
               <br />
               No noise
@@ -57,7 +57,7 @@ const AboutPage: React.FC = () => {
             </h2>
           </div>
 
-          <div className="space-y-5 text-muted-foreground">
+          <div className="space-y-5 text-foreground text-2xl font-arizonia">
             <p>What came after wasn't a plan. It was a response.</p>
 
             <p>
@@ -90,19 +90,19 @@ const AboutPage: React.FC = () => {
               Inspired by Dhaka
             </p>
 
-            <h2 className="text-4xl font-bold uppercase leading-[0.95] tracking-tight sm:text-5xl md:text-6xl">
+            <h2 className="text-4xl uppercase leading-[0.95] tracking-wider sm:text-5xl md:text-6xl font-kaushan-script">
               This isn't for everyone
               <br />
               and we never wanted it to be.
             </h2>
 
-            <p className="mt-8 max-w-xl leading-relaxed text-muted-foreground">
+            <p className="mt-8 max-w-xl leading-relaxed text-muted-foreground font-arizonia text-2xl">
               This isn't for everyone — and we never wanted it to be. If you're
               trying to fit in, you won't get it. If you've already stopped
               trying, you might.
             </p>
 
-            <p className="mt-5 max-w-xl leading-relaxed text-muted-foreground">
+            <p className="mt-5 max-w-xl leading-relaxed text-muted-foreground font-arizonia text-2xl">
               That energy is part of Monet. Our designs take inspiration from
               the places we know and the streets we walk every day.
             </p>
@@ -118,52 +118,11 @@ const AboutPage: React.FC = () => {
               What We Believe
             </p>
 
-            <h2 className="text-4xl font-bold uppercase leading-tight tracking-tight sm:text-5xl">
+            <h2 className="text-4xl uppercase leading-tight tracking-wider sm:text-5xl font-kaushan-script">
               It doesn't move quietly.
               <br />
               It's a perspective.
             </h2>
-          </div>
-
-          <div className="mt-16 grid gap-10 border-t pt-10 md:grid-cols-3">
-            <div>
-              <span className="text-sm font-semibold text-muted-foreground">
-                01
-              </span>
-
-              <h3 className="mt-4 text-2xl font-bold uppercase">Accessible</h3>
-
-              <p className="mt-4 leading-relaxed text-muted-foreground">
-                Good design shouldn&apos;t be exclusive. We create footwear that
-                looks good and stays within reach.
-              </p>
-            </div>
-
-            <div>
-              <span className="text-sm font-semibold text-muted-foreground">
-                02
-              </span>
-
-              <h3 className="mt-4 text-2xl font-bold uppercase">Everyday</h3>
-
-              <p className="mt-4 leading-relaxed text-muted-foreground">
-                Built for real life — from your morning commute to wherever the
-                day takes you.
-              </p>
-            </div>
-
-            <div>
-              <span className="text-sm font-semibold text-muted-foreground">
-                03
-              </span>
-
-              <h3 className="mt-4 text-2xl font-bold uppercase">Local</h3>
-
-              <p className="mt-4 leading-relaxed text-muted-foreground">
-                Our inspiration comes from home. The streets, culture, and
-                energy around us are part of who we are.
-              </p>
-            </div>
           </div>
         </div>
       </section>

@@ -58,13 +58,13 @@ const OceanDriftPage: React.FC = () => {
                   Monet / Ocean Drift
                 </p>
 
-                <h1 className="text-5xl font-bold uppercase leading-[0.88] tracking-tight sm:text-6xl md:text-8xl">
+                <h1 className="text-5xl font-bold uppercase leading-[0.88] tracking-tight sm:text-6xl md:text-8xl font-kaushan-script">
                   Made to
                   <br />
                   move different.
                 </h1>
 
-                <p className="mt-8 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+                <p className="mt-8 max-w-xl text-2xl leading-relaxed text-white font-arizonia">
                   Ocean Drift isn't made for blending in. Built for those who
                   move differently.
                 </p>
@@ -93,13 +93,13 @@ const OceanDriftPage: React.FC = () => {
                 Meet Ocean Drift
               </p>
 
-              <h2 className="text-4xl font-bold text-background uppercase leading-[0.95] tracking-tight sm:text-5xl md:text-6xl">
+              <h2 className="text-4xl font-bold text-background uppercase leading-[0.95] tracking-tight sm:text-5xl md:text-6xl font-kaushan-script">
                 Not made
                 <br />
                 to disappear.
               </h2>
 
-              <div className="mt-8 space-y-5 text-background">
+              <div className="mt-8 space-y-5 text-background font-arizonia text-2xl leading-relaxed">
                 <p>
                   Ocean Drift was designed for the ones who don't want another
                   ordinary pair of sneakers.
@@ -138,7 +138,7 @@ const OceanDriftPage: React.FC = () => {
                 The Design
               </p>
 
-              <h2 className="text-4xl font-bold text-background uppercase leading-[0.95] tracking-tight sm:text-5xl md:text-6xl">
+              <h2 className="text-4xl font-bold text-background uppercase leading-[0.95] tracking-tight sm:text-5xl md:text-6xl font-kaushan-script">
                 For the bold.
                 <br />
                 Not the
@@ -146,14 +146,13 @@ const OceanDriftPage: React.FC = () => {
                 background.
               </h2>
 
-              <p className="mt-8 max-w-xl leading-relaxed text-background">
+              <p className="mt-8 max-w-xl text-background font-arizonia text-2xl leading-relaxed">
                 Ocean Drift takes a familiar sneaker silhouette and pushes it
                 somewhere louder. The proportions, layered details, and
                 contrasting elements give it a presence that doesn't need
                 explaining.
-              </p>
-
-              <p className="mt-5 max-w-xl leading-relaxed text-background">
+                <br />
+                <br />
                 It's the kind of shoe that changes the way an outfit feels
                 without asking for permission.
               </p>
@@ -235,13 +234,13 @@ const OceanDriftPage: React.FC = () => {
                 Ocean Drift
               </p>
 
-              <h2 className="text-4xl font-bold uppercase leading-tight tracking-tight sm:text-5xl text-background">
+              <h2 className="text-4xl font-bold uppercase leading-tight tracking-tight sm:text-5xl text-background font-kaushan-script">
                 Your next
                 <br />
                 favorite pair.
               </h2>
 
-              <p className="mt-6 max-w-xl leading-relaxed text-background">
+              <p className="mt-6 max-w-xl leading-relaxed text-background font-arizonia text-2xl">
                 Whether you're heading into the city, meeting friends, or simply
                 going wherever the day takes you, Ocean Drift is built to go
                 with you.
@@ -265,68 +264,20 @@ const OceanDriftPage: React.FC = () => {
           <div className="mx-auto max-w-7xl">
             <div className="max-w-3xl">
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-accent">
-                Built For Everyday
+                Built For Occasion
               </p>
 
-              <h2 className="text-4xl font-bold uppercase leading-tight tracking-tight sm:text-5xl">
+              <h2 className="text-4xl font-bold uppercase leading-tight tracking-tight sm:text-5xl font-kaushan-script">
                 Looks aggressive.
                 <br />
                 Feels effortless.
               </h2>
 
-              <p className="mt-6 max-w-2xl leading-relaxed">
+              <p className="mt-6 max-w-2xl leading-relaxed font-arizonia text-2xl">
                 Ocean Drift brings together the visual character you want with
                 the everyday comfort you need. Because a statement sneaker means
                 nothing if you can't actually live in it.
               </p>
-            </div>
-
-            {/* Features */}
-            <div className="mt-16 grid gap-10 border-t pt-10 md:grid-cols-3">
-              <div>
-                <span className="text-sm font-semibold text-muted-foreground">
-                  01
-                </span>
-
-                <h3 className="mt-4 text-2xl font-bold uppercase">
-                  Bold Silhouette
-                </h3>
-
-                <p className="mt-4 leading-relaxed">
-                  A distinctive shape designed to stand out from the usual
-                  everyday sneaker.
-                </p>
-              </div>
-
-              <div>
-                <span className="text-sm font-semibold text-muted-foreground">
-                  02
-                </span>
-
-                <h3 className="mt-4 text-2xl font-bold uppercase">
-                  Everyday Comfort
-                </h3>
-
-                <p className="mt-4 leading-relaxed">
-                  Designed to keep up with your everyday movement without
-                  sacrificing style.
-                </p>
-              </div>
-
-              <div>
-                <span className="text-sm font-semibold text-muted-foreground">
-                  03
-                </span>
-
-                <h3 className="mt-4 text-2xl font-bold uppercase">
-                  Made To Stand Out
-                </h3>
-
-                <p className="mt-4 leading-relaxed">
-                  Strong visual details give Ocean Drift a presence wherever you
-                  take it.
-                </p>
-              </div>
             </div>
           </div>
         </section>

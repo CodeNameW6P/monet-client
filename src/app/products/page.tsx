@@ -1,7 +1,26 @@
-import ProductCard from "@/components/product-card";
-import { mockProducts } from "@/lib/fake-products";
+import ProductCard, { type Product } from "@/components/product-card";
 
-export default function ProductsPage() {
+async function getProducts(): Promise<Product[]> {
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
+  if (!apiUrl) {
+    throw new Error("NEXT_PUBLIC_API_URL is not configured");
+  }
+
+  const response = await fetch(`${apiUrl}/products`, {
+    cache: "no-store",
+  });
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch products");
+  }
+
+  return response.json();
+}
+
+export default async function ProductsPage() {
+  const products = await getProducts();
+
   return (
     <main>
       <section className="border-b bg-background">
@@ -20,12 +39,19 @@ export default function ProductsPage() {
           </p>
         </div>
       </section>
+
       <section className="bg-background">
-        <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-6 md:grid-cols-3 lg:gap-x-8 lg:gap-y-12">
-          {mockProducts.map((product) => (
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-x-4 gap-y-10 px-4 py-10 sm:gap-6 md:grid-cols-3 md:px-6 md:py-14 lg:gap-x-8 lg:gap-y-12">
+          {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
+
+        {products.length === 0 && (
+          <p className="mx-auto max-w-7xl px-4 pb-12 text-center text-muted-foreground">
+            No products available right now. Check back soon!
+          </p>
+        )}
       </section>
     </main>
   );

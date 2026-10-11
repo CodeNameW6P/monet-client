@@ -35,16 +35,13 @@ const Hero: React.FC = () => {
           />
 
           {/* Heading */}
-          <h1 className="flex max-w-4xl flex-col items-center text-5xl font-bold uppercase sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+          <h1 className="flex max-w-4xl flex-col items-center text-5xl uppercase sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-arizonia font-bold mt-8">
             Step Into
           </h1>
           <Image src="/monet.png" alt="মোনে" width={700} height={400} />
-          <h1 className="font-bold uppercase text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-            Break the Crowd
-          </h1>
           {/* Description */}
-          <p className="text-background/70 text-base sm:text-lg md:text-2xl mt-8">
-            If it isn't for everyone - don't be everyone
+          <p className="text-background text-3xl sm:text-3xl md:text-3xl mt-8 font-arizonia">
+            Wear what the crowd wouldn't dare
           </p>
           {/* Countdown */}
           <div className="mt-10">
