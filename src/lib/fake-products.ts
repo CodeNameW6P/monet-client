@@ -2,11 +2,12 @@ import type { Product } from "@/components/product-card";
 
 export const mockProducts: Product[] = [
   {
-    id: 1,
+    id: "1",
     name: "Colors of Spring",
     category: "Casual Sneakers",
     price: 2990,
-    image: [
+    slug: "colors-of-spring",
+    images: [
       "/images/products/s1.png",
       "/images/products/s2.png",
       "/images/products/s3.png",
@@ -18,11 +19,12 @@ export const mockProducts: Product[] = [
     description: "A burst of color in every step. Let your style bloom.",
   },
   {
-    id: 2,
+    id: "2",
     name: "Ocean Drift",
     category: "Casual Sneakers",
     price: 3100,
-    image: [
+    slug: "ocean-drift",
+    images: [
       "/images/products/p1.png",
       "/images/products/p2.png",
       "/images/products/p3.png",
