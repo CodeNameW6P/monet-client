@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const targetDate = new Date("2026-10-01T00:00:00+06:00").getTime();
+const targetDate = new Date("2026-11-11T01:00:00+06:00").getTime();
 
 type TimeLeft = {
   days: number;

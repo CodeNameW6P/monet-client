@@ -79,7 +79,7 @@ const OceanDriftPage: React.FC = () => {
             {/* Shoe Image */}
             <div className="relative aspect-square overflow-hidden rounded-2xl bg-muted">
               <Image
-                src="/images/products/p1.png"
+                src="https://res.cloudinary.com/ekaqppbl/image/upload/v1791644962/pn1.png"
                 alt="Ocean Drift sneaker"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -160,7 +160,7 @@ const OceanDriftPage: React.FC = () => {
 
             <div className="relative order-1 aspect-square overflow-hidden rounded-2xl md:order-2">
               <Image
-                src="/images/products/p6.png"
+                src="https://res.cloudinary.com/ekaqppbl/image/upload/v1791644999/pn3.png"
                 alt="Ocean Drift side view"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -221,7 +221,7 @@ const OceanDriftPage: React.FC = () => {
           <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2 md:items-center md:gap-20">
             <div className="relative aspect-square overflow-hidden rounded-2xl bg-muted">
               <Image
-                src="/images/products/p4.png"
+                src="https://res.cloudinary.com/ekaqppbl/image/upload/v1791644972/pn2.png"
                 alt="Ocean Drift sneaker"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
