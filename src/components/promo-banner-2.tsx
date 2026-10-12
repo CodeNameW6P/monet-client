@@ -30,7 +30,7 @@ const PromoBanner2: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
               <h2 className="text-4xl font-bold leading-[0.95] tracking-tight sm:text-5xl md:text-6xl font-kaushan-script">
                 {product.name}
               </h2>
-              <p className="mt-6 max-w-md text-xl leading-relaxed text-white font-arizonia">
+              <p className="mt-6 max-w-md text-xl leading-relaxed text-white font-lobster">
                 {product.description}
               </p>
               <div className="mt-8">

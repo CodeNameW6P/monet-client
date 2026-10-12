@@ -60,21 +60,21 @@ const Header: React.FC = () => {
         >
           <Link
             href="/"
-            className="text-base font-medium transition-colors hover:text-foreground/60 lg:text-lg xl:text-xl font-kaushan-script"
+            className="text-base font-medium transition-colors hover:text-foreground/60 lg:text-lg xl:text-xl font-lobster"
           >
             Home
           </Link>
 
           <Link
             href="/products"
-            className="text-base font-medium transition-colors hover:text-foreground/60 lg:text-lg xl:text-xl font-kaushan-script"
+            className="text-base font-medium transition-colors hover:text-foreground/60 lg:text-lg xl:text-xl font-lobster"
           >
             Shop
           </Link>
 
           <Link
             href="/about"
-            className="text-base font-medium transition-colors hover:text-foreground/60 lg:text-lg xl:text-xl font-kaushan-script"
+            className="text-base font-medium transition-colors hover:text-foreground/60 lg:text-lg xl:text-xl font-lobster"
           >
             About Us
           </Link>

@@ -5,6 +5,7 @@ import {
   Arizonia,
   Kaushan_Script,
   Fleur_De_Leah,
+  Lobster,
 } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
@@ -35,6 +36,12 @@ const kaushanScript = Kaushan_Script({
 
 const fleurDeLeah = Fleur_De_Leah({
   variable: "--font-fleur-de-leah",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const lobster = Lobster({
+  variable: "--font-lobster",
   subsets: ["latin"],
   weight: "400",
 });
@@ -79,7 +86,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${arizonia.variable} ${kaushanScript.variable} ${fleurDeLeah.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${arizonia.variable} ${kaushanScript.variable} ${fleurDeLeah.variable} ${lobster.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <CartProvider>

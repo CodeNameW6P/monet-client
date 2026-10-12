@@ -35,12 +35,12 @@ const Hero: React.FC = () => {
           />
 
           {/* Heading */}
-          <h1 className="flex max-w-4xl flex-col items-center text-5xl uppercase sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-arizonia font-bold mt-8">
+          <h1 className="flex max-w-4xl flex-col items-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-lobster mt-8">
             Step Into
           </h1>
           <Image src="/monet.png" alt="মোনে" width={700} height={400} />
           {/* Description */}
-          <p className="text-background text-3xl sm:text-3xl md:text-3xl mt-8 font-arizonia">
+          <p className="text-background text-3xl sm:text-3xl md:text-3xl mt-8 font-lobster">
             Wear what the crowd wouldn't dare
           </p>
           {/* Countdown */}

@@ -64,7 +64,7 @@ const OceanDriftPage: React.FC = () => {
                   move different.
                 </h1>
 
-                <p className="mt-8 max-w-xl text-2xl leading-relaxed text-white font-arizonia">
+                <p className="mt-8 max-w-xl text-2xl leading-relaxed text-white font-lobster">
                   Colors of Spring is made for blending in with the nature.
                   Built for those who move elegantly.
                 </p>
@@ -99,7 +99,7 @@ const OceanDriftPage: React.FC = () => {
                 to disappear.
               </h2>
 
-              <div className="mt-8 space-y-5 text-background font-arizonia text-lg sm:text-xl md:text-2xl">
+              <div className="mt-8 space-y-5 text-background font-lobster text-lg sm:text-xl md:text-2xl">
                 <p>
                   Colors of Spring was designed for the ones who don't want
                   another ordinary pair of sneakers.
@@ -144,14 +144,14 @@ const OceanDriftPage: React.FC = () => {
                 Not the norm.
               </h2>
 
-              <p className="mt-8 max-w-xl leading-relaxed text-background font-arizonia text-lg sm:text-xl md:text-2xl">
+              <p className="mt-8 max-w-xl leading-relaxed text-background font-lobster text-lg sm:text-xl md:text-2xl">
                 Colors of Spring takes a familiar sneaker silhouette and pushes
                 it somewhere louder. The proportions, layered details, and
                 contrasting elements give it a presence that doesn't need
                 explaining.
               </p>
 
-              <p className="mt-5 max-w-xl leading-relaxed text-background font-arizonia text-lg sm:text-xl md:text-2xl">
+              <p className="mt-5 max-w-xl leading-relaxed text-background font-lobster text-lg sm:text-xl md:text-2xl">
                 It's the kind of shoe that changes the way an outfit feels
                 without asking for permission.
               </p>
@@ -239,7 +239,7 @@ const OceanDriftPage: React.FC = () => {
                 favorite pair.
               </h2>
 
-              <p className="mt-6 max-w-xl leading-relaxed text-background font-arizonia text-lg sm:text-xl md:text-2xl">
+              <p className="mt-6 max-w-xl leading-relaxed text-background font-lobster text-lg sm:text-xl md:text-2xl">
                 From city strolls to spontaneous plans, Colors of Spring brings
                 a burst of color to wherever life takes you. Made to stand out,
                 designed to brighten every step.
@@ -272,7 +272,7 @@ const OceanDriftPage: React.FC = () => {
                 Feels effortless.
               </h2>
 
-              <p className="mt-6 max-w-2xl leading-relaxed font-arizonia text-lg sm:text-xl md:text-2xl">
+              <p className="mt-6 max-w-2xl leading-relaxed font-lobster text-lg sm:text-xl md:text-2xl">
                 Colors of Spring brings together the visual character you want
                 with the everyday comfort you need. Because a statement sneaker
                 means nothing if you can't actually live in it.

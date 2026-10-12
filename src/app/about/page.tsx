@@ -23,13 +23,13 @@ const AboutPage: React.FC = () => {
                 About Monet
               </p>
 
-              <h1 className="text-5xl uppercase leading-[0.9] tracking-widest sm:text-6xl md:text-8xl font-kaushan-script">
+              <h1 className="text-5xl uppercase leading-[0.9] sm:text-6xl md:text-8xl font-kaushan-script">
                 This wasn't
                 <br />
                 supposed to exist.
               </h1>
 
-              <p className="mt-8 max-w-xl text-2xl leading-relaxed text-white font-arizonia">
+              <p className="mt-8 max-w-xl text-2xl leading-relaxed text-white font-lobster">
                 We came from a world built on discipline, structure, and fitting
                 into lines drawn by others. For a while, we played along. Then
                 we realized — some people aren't made to fit in, no matter how
@@ -48,7 +48,7 @@ const AboutPage: React.FC = () => {
               Our Story
             </p>
 
-            <h2 className="text-4xl uppercase leading-tight tracking-widest sm:text-5xl font-kaushan-script">
+            <h2 className="text-4xl uppercase leading-tight sm:text-5xl font-kaushan-script">
               So we left.
               <br />
               No noise
@@ -57,7 +57,7 @@ const AboutPage: React.FC = () => {
             </h2>
           </div>
 
-          <div className="space-y-5 text-foreground text-2xl font-arizonia">
+          <div className="space-y-5 text-foreground text-2xl font-lobster">
             <p>What came after wasn't a plan. It was a response.</p>
 
             <p>
@@ -90,19 +90,19 @@ const AboutPage: React.FC = () => {
               Inspired by Dhaka
             </p>
 
-            <h2 className="text-4xl uppercase leading-[0.95] tracking-wider sm:text-5xl md:text-6xl font-kaushan-script">
+            <h2 className="text-4xl uppercase leading-[0.95] sm:text-5xl md:text-6xl font-kaushan-script">
               This isn't for everyone
               <br />
               and we never wanted it to be.
             </h2>
 
-            <p className="mt-8 max-w-xl leading-relaxed text-muted-foreground font-arizonia text-2xl">
+            <p className="mt-8 max-w-xl leading-relaxed text-muted-foreground font-lobster text-2xl">
               This isn't for everyone — and we never wanted it to be. If you're
               trying to fit in, you won't get it. If you've already stopped
               trying, you might.
             </p>
 
-            <p className="mt-5 max-w-xl leading-relaxed text-muted-foreground font-arizonia text-2xl">
+            <p className="mt-5 max-w-xl leading-relaxed text-muted-foreground font-lobster text-2xl">
               That energy is part of Monet. Our designs take inspiration from
               the places we know and the streets we walk every day.
             </p>
@@ -118,7 +118,7 @@ const AboutPage: React.FC = () => {
               What We Believe
             </p>
 
-            <h2 className="text-4xl uppercase leading-tight tracking-wider sm:text-5xl font-kaushan-script">
+            <h2 className="text-4xl uppercase leading-tight sm:text-5xl font-kaushan-script">
               It doesn't move quietly.
               <br />
               It's a perspective.

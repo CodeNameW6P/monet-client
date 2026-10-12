@@ -64,7 +64,7 @@ const OceanDriftPage: React.FC = () => {
                   move different.
                 </h1>
 
-                <p className="mt-8 max-w-xl text-2xl leading-relaxed text-white font-arizonia">
+                <p className="mt-8 max-w-xl text-2xl leading-relaxed text-white font-lobster">
                   Ocean Drift isn't made for blending in. Built for those who
                   move differently.
                 </p>
@@ -99,7 +99,7 @@ const OceanDriftPage: React.FC = () => {
                 to disappear.
               </h2>
 
-              <div className="mt-8 space-y-5 text-background font-arizonia text-2xl leading-relaxed">
+              <div className="mt-8 space-y-5 text-background font-lobster text-2xl leading-relaxed">
                 <p>
                   Ocean Drift was designed for the ones who don't want another
                   ordinary pair of sneakers.
@@ -146,7 +146,7 @@ const OceanDriftPage: React.FC = () => {
                 background.
               </h2>
 
-              <p className="mt-8 max-w-xl text-background font-arizonia text-2xl leading-relaxed">
+              <p className="mt-8 max-w-xl text-background font-lobster text-2xl leading-relaxed">
                 Ocean Drift takes a familiar sneaker silhouette and pushes it
                 somewhere louder. The proportions, layered details, and
                 contrasting elements give it a presence that doesn't need
@@ -240,7 +240,7 @@ const OceanDriftPage: React.FC = () => {
                 favorite pair.
               </h2>
 
-              <p className="mt-6 max-w-xl leading-relaxed text-background font-arizonia text-2xl">
+              <p className="mt-6 max-w-xl leading-relaxed text-background font-lobster text-2xl">
                 Whether you're heading into the city, meeting friends, or simply
                 going wherever the day takes you, Ocean Drift is built to go
                 with you.
@@ -273,7 +273,7 @@ const OceanDriftPage: React.FC = () => {
                 Feels effortless.
               </h2>
 
-              <p className="mt-6 max-w-2xl leading-relaxed font-arizonia text-2xl">
+              <p className="mt-6 max-w-2xl leading-relaxed font-lobster text-2xl">
                 Ocean Drift brings together the visual character you want with
                 the everyday comfort you need. Because a statement sneaker means
                 nothing if you can't actually live in it.
