@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Countdown from "./countdown";
 import Image from "next/image";
+import NewsletterDialog from "./newsletter-dialog";
 
 const Hero: React.FC = () => {
   return (
@@ -50,7 +51,7 @@ const Hero: React.FC = () => {
 
           {/* CTA */}
           <div className="mt-10">
-            <Button
+            {/* <Button
               size="lg"
               className="bg-accent font-semibold text-accent-foreground hover:bg-accent/80"
             >
@@ -58,7 +59,8 @@ const Hero: React.FC = () => {
                 Shop on MONET
                 <ArrowRight />
               </Link>
-            </Button>
+            </Button> */}
+            <NewsletterDialog buttonTitle="Join the Monet Cult" />
           </div>
         </div>
       </div>

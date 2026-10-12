@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Product } from "@/components/product-card";
+import NewsletterDialog from "./newsletter-dialog";
 
 type PromoBannerProps = {
   product: Product;
@@ -59,7 +60,7 @@ const PromoBanner1: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
               </p>
 
               <div className="mt-8">
-                <Button
+                {/* <Button
                   size="lg"
                   className="bg-accent font-semibold text-accent-foreground hover:bg-accent/90"
                 >
@@ -70,7 +71,8 @@ const PromoBanner1: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
                   >
                     Get Yours Now <ArrowRight />
                   </Link>
-                </Button>
+                </Button> */}
+                <NewsletterDialog buttonTitle="Dropping on 11/11" />
               </div>
             </div>
           </div>

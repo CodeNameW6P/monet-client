@@ -12,7 +12,15 @@ async function getProducts(): Promise<Product[]> {
   });
 
   if (!response.ok) {
-    throw new Error("Failed to fetch products");
+    // throw new Error("Failed to fetch products");
+
+    if (!response.ok) {
+      const body = await response.text();
+
+      throw new Error(
+        `Failed to fetch products: ${response.status} ${response.statusText}. ${body}`,
+      );
+    }
   }
 
   return response.json();
