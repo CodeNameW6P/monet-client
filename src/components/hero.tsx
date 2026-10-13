@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import Countdown from "./countdown";
 import Image from "next/image";
 import NewsletterDialog from "./newsletter-dialog";
@@ -39,7 +36,13 @@ const Hero: React.FC = () => {
           {/* <h1 className="flex max-w-4xl flex-col items-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-lobster mt-8">
             Step Into
           </h1> */}
-          <Image src="/monet.png" alt="মোনে" width={700} height={400} />
+          <Image
+            className="mt-4"
+            src="/monet.png"
+            alt="মোনে"
+            width={700}
+            height={400}
+          />
           {/* Description */}
           <p className="text-background text-3xl sm:text-3xl md:text-3xl mt-8 font-lobster">
             Wear what the crowd wouldn't dare
