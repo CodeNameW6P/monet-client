@@ -16,7 +16,7 @@ const PromoBanner2: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
       <div className="mx-auto max-w-7xl">
         <div className="relative min-h-105 overflow-hidden rounded-md bg-foreground sm:min-h-120">
           <Image
-            src={bannerImage}
+            src="/images/o-waves.png"
             alt="Featured footwear collection"
             fill
             sizes="(max-width: 1280px) 100vw, 1280px"
@@ -60,7 +60,7 @@ const PromoBanner2: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
                     href="/campaign/ocean-drift"
                   >
                     <Image
-                      src={"/images/products/nw.png"}
+                      src={"/images/products/nw2.png"}
                       alt={product.name}
                       fill
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 25vw"

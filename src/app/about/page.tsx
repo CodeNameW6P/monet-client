@@ -84,29 +84,9 @@ const AboutPage: React.FC = () => {
 
       {/* Dhaka Section */}
       <section className="bg-muted px-6 py-20 md:px-10 md:py-28">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2 md:gap-20">
-          {/* <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
-            <Image
-              src="/images/fahad.jpg"
-              alt="The streets of Dhaka"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div> */}
-
-          <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-accent">
-              Inspired by Dhaka
-            </p>
-
-            <h2 className="text-4xl uppercase leading-[0.95] sm:text-5xl md:text-6xl font-kaushan-script">
-              This isn't for everyone
-              <br />
-              and we never wanted it to be.
-            </h2>
-
-            <p className="mt-8 max-w-xl leading-relaxed text-muted-foreground font-lobster text-2xl">
+        <div className="mx-auto flex max-w-7xl flex-col items-start gap-10 md:flex-row md:items-end md:gap-16">
+          <div className="md:w-1/2">
+            <p className="max-w-xl font-lobster text-2xl leading-relaxed text-muted-foreground">
               MONET is more than a business — it's a passion, an act of
               arrogance, the audacity to create something different in a world
               that keeps producing more of the same. We choose limited runs over
@@ -115,6 +95,18 @@ const AboutPage: React.FC = () => {
               in our culture, and true to ourselves. Not for everyone. Just for
               those who get it.
             </p>
+          </div>
+
+          <div className="md:w-1/2">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-accent">
+              Inspired by Dhaka
+            </p>
+
+            <h2 className="font-kaushan-script text-4xl uppercase leading-[0.95] sm:text-5xl md:text-6xl">
+              This isn't for everyone
+              <br />
+              and we never wanted it to be.
+            </h2>
           </div>
         </div>
       </section>
