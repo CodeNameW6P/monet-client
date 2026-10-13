@@ -33,6 +33,6 @@ export const mockProducts: Product[] = [
       "/images/products/p6.png",
     ],
     badge: "150x",
-    description: "Inspired by the Bay of Bengal, for the untamed",
+    description: "Inspired by the restless waves, beyond the ordinary",
   },
 ];

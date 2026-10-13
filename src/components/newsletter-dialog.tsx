@@ -107,16 +107,16 @@ export default function NewsletterDialog({
           </button>
           <div className="bg-black px-6 py-10 text-center text-white sm:px-9">
             <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-white/60">
-              The Monet Newsletter
+              Monet, Occasionally
             </p>
 
             <DialogHeader className="space-y-3 text-center">
               <DialogTitle className="text-3xl font-semibold tracking-tight sm:text-4xl">
-                Stay in the loop.
+                Only when it matters.
               </DialogTitle>
 
               <DialogDescription className="mx-auto max-w-xs text-sm leading-6 text-white/70">
-                New drops. Bold designs. Updates worth opening your inbox for.
+                We don't make things every day. When we do, you'll want to know.
               </DialogDescription>
             </DialogHeader>
           </div>
@@ -134,7 +134,8 @@ export default function NewsletterDialog({
 
                 <p className="mt-2 text-sm text-muted-foreground">
                   Check your inbox for a welcome email from Monet. Can't find
-                  it? Check your spam folder. We wouldn't want you to miss out.
+                  it? Check your spam/promotions folder. We wouldn't want you to
+                  miss out.
                 </p>
 
                 <Button

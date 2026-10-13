@@ -60,7 +60,7 @@ const PromoBanner2: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
                     href="/campaign/ocean-drift"
                   >
                     <Image
-                      src={"/images/products/pn1.png"}
+                      src={"/images/products/nw.png"}
                       alt={product.name}
                       fill
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 25vw"

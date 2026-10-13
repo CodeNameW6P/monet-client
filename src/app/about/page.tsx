@@ -17,31 +17,33 @@ const AboutPage: React.FC = () => {
 
           <div className="absolute inset-0 bg-black/60" />
 
-          <div className="relative z-10 mx-auto flex min-h-[70vh] max-w-7xl items-end px-6 py-16 md:px-10 md:py-20">
-            <div className="max-w-3xl">
+          <div className="relative z-10 mx-auto flex min-h-[70vh] max-w-7xl flex-col items-start justify-end gap-10 px-6 py-16 md:flex-row md:items-end md:gap-16 md:px-10 md:py-20">
+            <div className="md:w-1/2">
               <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-accent">
                 About Monet
               </p>
 
-              <h1 className="text-5xl uppercase leading-[0.9] sm:text-6xl md:text-8xl font-kaushan-script">
+              <h1 className="font-kaushan-script text-5xl uppercase leading-[0.9] sm:text-6xl md:text-8xl">
                 This wasn't
                 <br />
                 supposed to exist.
               </h1>
+            </div>
 
-              <p className="mt-8 max-w-xl text-2xl leading-relaxed text-white font-lobster">
-                At MONET, our goal isn't to mass-produce footwear for the
-                masses. We create limited quantities of affordable, art-inspired
-                sneakers for those who dare to express themselves differently.
-                Every design is an opportunity to wear something original, stand
-                apart, and carry a piece of art into everyday life. *Less mass
-                production. More individuality.*
+            <div className="md:w-1/2">
+              <p className="max-w-xl text-2xl leading-relaxed text-white font-lobster">
+                We came from a world where mornings began before sunrise, where
+                every minute was accounted for, every step had a purpose, and
+                standing in line was simply part of the routine. We learned
+                discipline, followed the rhythm, and did what was expected. But
+                somewhere between the early morning PT and the endless call to
+                make fall-in, we began to question whether fitting in was ever
+                the point.
               </p>
             </div>
           </div>
         </div>
       </section>
-
       {/* Our Story */}
       <section className="px-6 py-20 md:px-10 md:py-28">
         <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2 md:gap-20">
@@ -130,18 +132,6 @@ const AboutPage: React.FC = () => {
               <br />
               It's a perspective.
             </h2>
-
-            <p className="mt-8 max-w-xl leading-relaxed text-muted-foreground font-lobster text-2xl">
-              We came from a world where mornings began before sunrise, where
-              every minute was accounted for, every step had a purpose, and
-              standing in line was simply part of the routine. We learned
-              discipline, followed the rhythm, and did what was expected. But
-              somewhere between the early morning PT and the endless call to
-              make fall-in, we began to question whether fitting in was ever the
-              point. MONET was born from that quiet rebellion — a desire to
-              break formation, think differently, and create something that was
-              entirely our own.
-            </p>
           </div>
         </div>
       </section>
