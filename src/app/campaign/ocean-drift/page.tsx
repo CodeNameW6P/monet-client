@@ -42,7 +42,7 @@ const OceanDriftPage: React.FC = () => {
         <section className="relative h-[calc(100vh-72px)] text-white border-b-4">
           <div className="relative h-full">
             <Image
-              src="/images/products/od-cover.png"
+              src="/images/products/nw.png"
               alt="Ocean Drift"
               fill
               priority

@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Loader2, X } from "lucide-react";
 
 interface NewsletterDialogProps {
   buttonTitle?: string;
@@ -96,6 +96,15 @@ export default function NewsletterDialog({
 
       <DialogContent className="max-w-md border-0 bg-background p-0 sm:rounded-2xl">
         <div className="relative overflow-hidden rounded-lg">
+          {/* Custom close button */}
+          <button
+            type="button"
+            onClick={() => handleOpenChange(false)}
+            aria-label="Close newsletter dialog"
+            className="absolute right-4 top-4 z-20 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-black/40 text-white transition-colors hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          >
+            <X className="h-5 w-5" />
+          </button>
           <div className="bg-black px-6 py-10 text-center text-white sm:px-9">
             <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-white/60">
               The Monet Newsletter
@@ -177,7 +186,7 @@ export default function NewsletterDialog({
                     </>
                   ) : (
                     <>
-                      {buttonTitle}
+                      Join the cult
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </>
                   )}

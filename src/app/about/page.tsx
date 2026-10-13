@@ -7,7 +7,7 @@ const AboutPage: React.FC = () => {
       <section className="relative overflow-hidden bg-foreground text-white">
         <div className="relative min-h-[70vh]">
           <Image
-            src="/images/products/t1.jpeg"
+            src="/images/11-11.png"
             alt="Monet"
             fill
             priority
@@ -30,10 +30,12 @@ const AboutPage: React.FC = () => {
               </h1>
 
               <p className="mt-8 max-w-xl text-2xl leading-relaxed text-white font-lobster">
-                We came from a world built on discipline, structure, and fitting
-                into lines drawn by others. For a while, we played along. Then
-                we realized — some people aren't made to fit in, no matter how
-                hard they try.
+                At MONET, our goal isn't to mass-produce footwear for the
+                masses. We create limited quantities of affordable, art-inspired
+                sneakers for those who dare to express themselves differently.
+                Every design is an opportunity to wear something original, stand
+                apart, and carry a piece of art into everyday life. *Less mass
+                production. More individuality.*
               </p>
             </div>
           </div>
@@ -58,15 +60,21 @@ const AboutPage: React.FC = () => {
           </div>
 
           <div className="space-y-5 text-foreground text-2xl font-lobster">
-            <p>What came after wasn't a plan. It was a response.</p>
-
             <p>
-              For those who don't blend, don't adjust, don't shrink themselves
-              to be understood.
+              What followed wasn't a business plan. It was a quiet act of
+              defiance.
             </p>
 
             <p>
-              Monet is built for those who feel out of place in ordinary spaces.
+              For those who never quite fell into formation, who questioned the
+              lines drawn for them, and refused to make themselves smaller just
+              to fit.
+            </p>
+
+            <p>
+              MONET is for those who were never meant to blend into the
+              background — those who find their place not by following the
+              crowd, but by daring to be different.
             </p>
           </div>
         </div>
@@ -75,7 +83,7 @@ const AboutPage: React.FC = () => {
       {/* Dhaka Section */}
       <section className="bg-muted px-6 py-20 md:px-10 md:py-28">
         <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2 md:gap-20">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
+          {/* <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
             <Image
               src="/images/fahad.jpg"
               alt="The streets of Dhaka"
@@ -83,7 +91,7 @@ const AboutPage: React.FC = () => {
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
-          </div>
+          </div> */}
 
           <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-accent">
@@ -97,14 +105,13 @@ const AboutPage: React.FC = () => {
             </h2>
 
             <p className="mt-8 max-w-xl leading-relaxed text-muted-foreground font-lobster text-2xl">
-              This isn't for everyone — and we never wanted it to be. If you're
-              trying to fit in, you won't get it. If you've already stopped
-              trying, you might.
-            </p>
-
-            <p className="mt-5 max-w-xl leading-relaxed text-muted-foreground font-lobster text-2xl">
-              That energy is part of Monet. Our designs take inspiration from
-              the places we know and the streets we walk every day.
+              MONET is more than a business — it's a passion, an act of
+              arrogance, the audacity to create something different in a world
+              that keeps producing more of the same. We choose limited runs over
+              mass production, personal taste over passing trends, and meaning
+              over margins. We're here to create things that feel real, rooted
+              in our culture, and true to ourselves. Not for everyone. Just for
+              those who get it.
             </p>
           </div>
         </div>
@@ -123,6 +130,18 @@ const AboutPage: React.FC = () => {
               <br />
               It's a perspective.
             </h2>
+
+            <p className="mt-8 max-w-xl leading-relaxed text-muted-foreground font-lobster text-2xl">
+              We came from a world where mornings began before sunrise, where
+              every minute was accounted for, every step had a purpose, and
+              standing in line was simply part of the routine. We learned
+              discipline, followed the rhythm, and did what was expected. But
+              somewhere between the early morning PT and the endless call to
+              make fall-in, we began to question whether fitting in was ever the
+              point. MONET was born from that quiet rebellion — a desire to
+              break formation, think differently, and create something that was
+              entirely our own.
+            </p>
           </div>
         </div>
       </section>
