@@ -54,20 +54,17 @@ export default function AdminSidebar() {
 
   const handleSignOut = async () => {
     try {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/auth/sign-out`,
-        {
-          method: "POST",
-          credentials: "include",
-        },
-      );
+      const response = await fetch("/api/auth/sign-out", {
+        method: "POST",
+        credentials: "same-origin",
+      });
 
       if (!response.ok) {
         console.error("Failed to sign out.");
         return;
       }
 
-      router.push("/sign-in");
+      router.replace("/sign-in");
       router.refresh();
     } catch (error) {
       console.error("Sign-out error:", error);
