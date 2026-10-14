@@ -101,17 +101,6 @@ export default function AdminSignInPage() {
             {loading ? "Signing in..." : "Sign In"}
           </button>
         </form>
-
-        <p className="mt-6 text-center text-sm text-muted-foreground">
-          Don't have an account?{" "}
-          <button
-            type="button"
-            onClick={() => router.push("/sign-up")}
-            className="font-medium text-foreground hover:underline"
-          >
-            Sign up
-          </button>
-        </p>
       </div>
     </main>
   );
