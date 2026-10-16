@@ -28,19 +28,19 @@ const PromoBanner1: React.FC<PromoBannerProps> = ({ product, bannerImage }) => {
             <div className="w-full max-w-70 rounded-xl bg-white/50 p-3 shadow-2xl backdrop-blur-sm sm:max-w-80">
               <article className="group">
                 <div className="relative aspect-square overflow-hidden rounded-lg bg-muted">
-                  <Link
+                  {/* <Link
                     className="absolute inset-0"
                     // href={`/products/${product.id}`}
-                    href="/compaign/colors-of-spring"
-                  >
-                    <Image
-                      src={product.images[0]}
-                      alt={product.name}
-                      fill
-                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 25vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </Link>
+                    href="/campaign/colors-of-spring"
+                  > */}
+                  <Image
+                    src={product.images[0]}
+                    alt={product.name}
+                    fill
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 25vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  {/* </Link> */}
                 </div>
               </article>
             </div>
